@@ -43,7 +43,9 @@ body {
       font-weight: lighter;
       font-size: 22px;
   }
-  /* Footer Section */
+  /* end header nav section */
+
+  /* footer Section */
   footer {
       background: #fce138;
       width: 100%;
@@ -66,3 +68,22 @@ body {
   footer a {
     color: #024e76;
   }
+  /* end footer Section */
+
+  section {
+    padding: 60px;
+  }
+/* Hero Style Start */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+  }
+
+  .hero-form {
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    border: solid 3px #024e76;
+  }
+  /* Hero Style End */
