@@ -17,6 +17,22 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center; */
+}
+
+/* apply sticky background image to both*/
+header,
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 header h1 {
@@ -88,9 +104,9 @@ section {
 
 /* hero Style Start */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  /* background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -420,6 +436,7 @@ section {
 .contact-form button {
   border-radius: 10px;
 }
+
 /* end reach out section */
 
 
@@ -442,6 +459,7 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -570,25 +588,22 @@ section {
 }
 
 
-
-
-.hero-form {
-  background-color: rgb(252, 225, 56, 0.85);
-  border-radius: 15px;
+/* default state */
+button {
+  background: white;
 }
 
-.form-input {
-
+/* mouse is hovering over button */
+button:hover {
+  background: red;
 }
 
-.hero-form button {
-
+/* button is in focus because it was the most recently clicked element on the page */
+button:focus {
+  background: green;
 }
 
-.contact-form input, .contact-form textarea {
-
-}
-
-.contact-form button {
-
+/* user is actively pressing the cursor down on the button */
+button:active {
+  background: blue;
 }
