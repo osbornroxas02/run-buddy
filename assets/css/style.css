@@ -70,6 +70,13 @@ header nav ul li a {
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
 /* end header section */
 
 /* footer Section */
@@ -171,6 +178,10 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
 /* Hero Style End */
 
 
@@ -211,6 +222,10 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -424,6 +439,11 @@ section {
   font-size: 16px;
 }
 
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
 .contact-info a {
   color: #fce138;
 }
@@ -588,7 +608,7 @@ section {
 }
 
 
-/* default state */
+/* Default State */
 button {
   background: white;
 }
@@ -606,4 +626,24 @@ button:focus {
 /* user is actively pressing the cursor down on the button */
 button:active {
   background: blue;
+}
+
+/* HERO Focus State */
+.form-input {
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+/* REACH OUT Focus State*/
+.contact-form input, .contact-form textarea {
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
